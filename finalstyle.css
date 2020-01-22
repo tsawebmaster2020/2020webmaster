@@ -25,7 +25,8 @@ padding-left: 0;
 padding-right: 0;
 padding-bottom: 20px;
 margin-top: 0px;
-background-color: #000;
+background: rgb(0, 0, 0); /* Fallback color */
+background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
 position: fixed;
 top: 70px;
 width: 100%
