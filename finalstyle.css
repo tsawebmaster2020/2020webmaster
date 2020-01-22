@@ -1,0 +1,136 @@
+
+h1 {
+width: 100%;
+color: #A4F1FF;
+background-color: #000;
+margin: none;
+text-align: center;
+padding: 20px;
+top: 0;
+margin-bottom: 0;
+margin-top: 0;
+position: fixed;
+font-family: 'Bungee Inline';
+}
+
+
+.nav {
+color: white;
+list-style: none;
+text-align: center;
+margin-top: 30px;
+margin-bottom: 120px;
+padding-top: 20px;
+padding-left: 0;
+padding-right: 0;
+padding-bottom: 20px;
+margin-top: 0px;
+background-color: #000;
+position: fixed;
+top: 70px;
+width: 100%
+
+}
+.nav > li {
+display: inline-block;
+color: white;
+padding-right: 40px;
+margin-left: 40px;
+font-family: Tajawal;
+}
+.nav > li > a {
+text-decoration: none;
+color: white;
+padding: 20px;
+}
+
+a:hover {
+background-color: #696969;
+}
+
+body {
+background-color: #C9ECF3;
+font-family: 'Tajawal';
+}
+
+.infoimg {
+float: right;
+margin-right: 200px;
+
+}
+h2 {
+font-size: 45px;
+font-family: 'Tajawal';
+font-weight: 900;
+text-align: center;
+}
+.info {
+margin-right: 700px;
+font-size: 30px;
+font-family: 'Tajawal';
+margin-left: 100px;
+font-weight: 200;
+}
+.btn {
+border: none;
+background-color: #C9ECF3;
+color: white;
+font-size: 25px;
+font-family: 'Tajawal';
+display: inline-block;
+margin-right: 100px;
+margin-left: 140px;
+}
+.btn > a {
+border: 2px solid white;
+text-decoration: none;
+background-color: #C9ECF3;
+color: white;
+padding: 15px;
+}
+
+.btn > a:hover {
+border: 2px solid black;
+background-color: #C9ECF3;
+color: black;
+}
+table {
+margin: auto;
+border: 1px solid black;
+}
+
+th, td {
+font-size: 25px;
+padding: 10px;
+padding-right: 20px;
+padding-left: 20px;
+
+}
+
+.watchnow {
+width: 100%;
+border: none;
+background-color: #C9ECF3;
+color: black;
+font-size: 25px;
+font-family: 'Tajawal';
+display: inline-block;
+border: 3px solid black;
+padding: 15px;
+}
+.watchnow > a {
+
+width: 100%;
+text-decoration: none;
+background-color: #C9ECF3;
+color: black;
+padding: 15px;
+}
+.watchnow:hover  {
+border: 3px solid #639DA7;
+}
+.watchnow > a:hover {
+background-color: #C9ECF3;
+color: #639DA7;
+}
+
