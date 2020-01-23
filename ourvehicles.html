@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="vehiclestyle.css">
+<link href="https://fonts.googleapis.com/css?family=Tajawal:200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<title>Electrica</title>
+</head>
+
+<body>
+<h1>
+
+<ul class="nav">
+<li><a href="index.html"><img class="logo" src="electricalogo.png"></a></li>
+<li><a href="ourvehicles.html">OUR VEHICLES</a></li>
+<li><a href="energy.html">ENERGY</a></li>
+<li><a href="future.html">FUTURE</a></li>
+<li><a href="whoweare.html">WHO WE ARE</a></li>
+<li><a href="contact.html">CONTACT</a></li>
+</ul>
+  </h1>
+
+<div class="mySlides fade">
+
+<div class="vehiclecontainer">
+<img src="vehiclepic1.jpg" style="width:100%" height="650px">
+<div class="vehicletext"> 
+<p>Our 2020 Collection</p>
+</div>
+</div>
+</div>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+
+
+<div class="main" id="section1">
+<br><br><br><br><br><br>
+
+<p><img style="float: left;" src="Volta.jpg" class="imgs1" width="1000px" height="400px"></p>
+<h3 class="h3" style="color: white;">Inspire.<h3>
+<p style="padding-top: 5px;"></p>
+<p style="color: white;">insert specs here</p>
+<br>
+<a class="button" href="#section2">Next car</a>
+</div>
+
+<div class="main" id="section2">
+<p><img style=" float: right; margin-top: 100px" src="Volta.jpg" class="imgvolta" width="1000px" height="400px"></p>
+<h3 class="h3" style="color: deepskyblue">Innovate.<h3>
+<p style="margin-top: 50px; padding-top: 5px;"></p>
+<p style="color: deepskyblue;">insert specs here</p>
+<br>
+<a class="button2" href="#section3">Next car</a>
+</div>
+
+<div class="main" id="section3">
+<p><img style="padding: 15px; float: middle; margin-top: 0px;" src="Komoda.jpg" class="imgs3" width="800px" height="300px"></p>
+<h3 class="h3s3">Create.<h3>
+
+<p class="ps3">insert specs here</p>
+<br>
+<a class="button3" href="#section4">Next car</a>
+</div>
+
+<div class="main" id="section4">
+<p><img style="float: right;" src="Komoda.jpg" class="imgvolta" width="1000px" height="400px"></p>
+<h3 class="h3">Reinvent.<h3>
+<p style="margin-top: 0px; padding-top: 5px;"></p>
+<p>insert specs here</p>
+<br>
+<a class="button" href="#section1">Back to the top</a>
+</div>
+
+</body>
+</html>
